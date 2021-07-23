@@ -14,7 +14,7 @@ app.use("/", (request, response) => {
   let filenames = fs.readdirSync(directory_name);
 
   response.write(
-    `<html style="background-color: #171717; font-family: arial;"><head></head><body>`
+    `<html style="background-color: #171717; font-family: 'Courier Prime', monospace;"><head></head><body>`
   );
   response.write(
     `<h1 style="color: #DA0037;">Files and Folders in ${directory_name.toUpperCase()}</h1><hr><br/><div style="line-height: 35px;">`
