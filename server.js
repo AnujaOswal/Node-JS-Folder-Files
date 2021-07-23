@@ -20,7 +20,7 @@ app.use("/", (request, response) => {
     `<h1 style="color: #DA0037;">Files and Folders in ${directory_name.toUpperCase()}</h1><hr><br/><div style="line-height: 35px;">`
   );
   filenames.forEach((file) => {
-    if (path.extname(file) == ".png") {
+    if (path.extname(file) == "") {
       response.write(
         `<span style="font-size:16px; color: #E8F0F2"><img src="/images/folder.png" width="13px">&ensp;${file}</span><br/>`
       );
